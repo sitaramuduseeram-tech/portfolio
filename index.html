@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <head>
 
@@ -25,26 +27,82 @@
 </div>
 <body>
 
-    <!-- Loader -->
+    <!-- ==========================
+     Navigation Bar
+========================== -->
 
-    <div class="loader" id="loader">
+<header class="navbar">
 
-        <div class="loader-content">
+    <div class="logo">
 
-            <h1 id="loader-name"></h1>
+        <span class="logo-box">
 
-            <p id="loading-text">Preparing Portfolio...</p>
+            <span class="logo-s">S</span><span class="logo-r">R</span>
 
-        </div>
+        </span>
 
     </div>
+
+    <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#tech-stack">Skills</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-icons">
+
+        <button id="theme-toggle">
+            <i class="fa-regular fa-moon"></i>
+        </button>
+
+        <a href="https://github.com/sitaramuduseeram-tech" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/seeram-sita-ramudu/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a href="mailto:sitaramuduseeram@gmail.com">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
+
+    </div>
+
+</header>
+
+    <!-- Loader -->
+
+    <!-- ==========================
+     Google Style Intro
+========================== -->
+
+<div class="loader" id="loader">
+
+    <div class="loader-content">
+
+        <h1 id="loader-name"></h1>
+
+        <p id="loader-role">Software Engineer</p>
+
+        <div id="loader-logo">SR</div>
+
+        <p id="loader-tagline">
+            Building software with purpose.
+        </p>
+
+    </div>
+
+</div>
 
 
 </section>
 
     <!-- Hero Section -->
 
-    <section class="hero">
+   <section id="home" class="hero">
 
         <div class="hero-text">
 
@@ -247,7 +305,7 @@
 
         <div class="project-card">
 
-            <!-- <img src="assets/images/my-portfolio.png" alt="Personal Portfolio"> -->
+            <img src="assets/images/portfolio.png" alt="Portfolio Project">
 
             <h3>🌐 Personal Portfolio</h3>
 
@@ -265,7 +323,7 @@
 
         <div class="project-card">
 
-            <img src="assets/images/music-streaming.png" alt="Music Streaming App">
+            <img src="assets/images/music-app.png" alt="Music Streaming App">
 
             <h3>🎵 AI Music Streaming App</h3>
 
@@ -353,56 +411,85 @@
 </section>
 
     <!-- ==========================
-         Achievements Section
-    ========================== -->
+     Certifications
+========================== -->
 
-    <section class="achievements" id="achievements">
+<section class="certifications" id="certifications">
 
-        <h2>Achievements</h2>
+    <h2>Certifications</h2>
 
-        <div class="achievement-container">
+    <div class="certifications-container">
 
-            <div class="achievement-card">
+        <div class="certificate-card">
+            <h3>🤝 Deloitte Technology Job Simulation</h3>
+            <p>Software Development • Coding • Development</p>
 
-                <h3>🏆 HackerRank Java Certificate</h3>
-
-                <p>
-                    Successfully cleared the HackerRank Java Skill Certification.
-                </p>
-
-            </div>
-
-            <div class="achievement-card">
-
-                <h3>💯 Data Structures & Algorithms</h3>
-
-                <p>
-                    Solved multiple coding problems on LeetCode and HackerRank.
-                </p>
-
-            </div>
-
-            <div class="achievement-card">
-
-                <h3>📜 Java Full Stack Learning</h3>
-
-                <p>
-                    Continuously improving Java, Spring Boot, SQL, HTML, CSS, and JavaScript skills.
-                </p>
-
-            </div>
-
-            <div class="achievement-card">
-
-                <h3>🎯 Career Goal</h3>
-
-                <p>
-                    Preparing for Software Engineer roles at Google, Microsoft, Amazon, Deloitte, TCS, and Infosys.
-                </p>
-
-            </div>
-
+            <a href="assets/resume/deloitte.pdf"
+               target="_blank"
+               class="certificate-btn">
+               📄 View Certificate
+            </a>
         </div>
+
+        <div class="certificate-card">
+            <h3>🛡 Tata Cybersecurity Simulation</h3>
+            <p>Identity & Access Management (IAM)</p>
+
+            <a href="assets/resume/tata.pdf"
+               target="_blank"
+               class="certificate-btn">
+               📄 View Certificate
+            </a>
+        </div>
+
+        <div class="certificate-card">
+            <h3>⚡ JavaScript Intermediate</h3>
+            <p>HackerRank Certification</p>
+
+            <a href="assets/resume/javascript.pdf"
+               target="_blank"
+               class="certificate-btn">
+               📄 View Certificate
+            </a>
+        </div>
+
+        <div class="certificate-card">
+            <h3>🗔 SQL Intermediate</h3>
+            <p>HackerRank Certification</p>
+
+            <a href="assets/resume/sql.pdf"
+               target="_blank"
+               class="certificate-btn">
+               📄 View Certificate
+            </a>
+        </div>
+
+        <div class="certificate-card">
+            <h3>🟢 Node.js Intermediate</h3>
+            <p>HackerRank Certification</p>
+
+            <a href="assets/resume/nodejs.pdf"
+               target="_blank"
+               class="certificate-btn">
+               📄 View Certificate
+            </a>
+        </div>
+
+        <div class="certificate-card">
+            <h3>🤖 Generative AI</h3>
+            <p>Artificial Intelligence Certification</p>
+
+            <a href="assets/resume/generative Ai and deloitte.pdf"
+               target="_blank"
+               class="certificate-btn">
+               📄 View Certificate
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
 <!-- ==========================
      Contact Section
 ========================== -->
@@ -501,6 +588,22 @@
     <script src="js/loader.js"></script>
 <script src="js/typing.js"></script>
 <script src="js/cursor.js"></script>
+
+<!-- ==========================
+     PDF Certificate Viewer
+========================== -->
+
+<div id="pdfModal" class="pdf-modal">
+
+    <div class="pdf-container">
+
+        <span class="close-btn" onclick="closePDF()">&times;</span>
+
+        <iframe id="pdfFrame"></iframe>
+
+    </div>
+
+</div>
 </body>
 
 </html>
