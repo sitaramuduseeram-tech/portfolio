@@ -2239,3 +2239,7 @@ transform:scale(1);
 .logo .logo-r{
     color: #2F80FF;
 }
+body.dark-mode{
+    background:#050816;
+    color:white;
+}
