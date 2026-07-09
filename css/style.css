@@ -871,106 +871,66 @@ nav ul li a:hover, .nav-links a:hover{
 
 }
 
-.projects-container{
-
+.projects-grid{
     display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
+    grid-template-columns:repeat(auto-fit,minmax(430px,1fr));
+    gap:35px;
 }
 
 .project-card{
-
-    background:white;
-
-    padding:30px;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-    transition:.3s;
-
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(47,128,255,.12);
+    display:flex;
+    flex-direction:column;
+    transition:.35s;
 }
 
 .project-card:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:0 18px 35px rgba(37,99,235,.18);
-
+    transform:translateY(-8px);
+    box-shadow:0 18px 45px rgba(47,128,255,.16);
 }
 
-.project-card h3{
-
-    color:#2563eb;
-
-    margin-bottom:20px;
-
+.project-image{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+    display:block;
 }
 
-.project-card p{
+.project-content{
+    padding:24px;
+}
 
+.project-content h3{
+    font-size:32px;
+    margin:8px 0 10px;
+}
+
+.project-content p{
+    font-size:17px;
+    line-height:1.7;
     color:#555;
-
-    line-height:28px;
-
-    margin-bottom:20px;
-
+    margin-bottom:18px;
 }
 
-.project-tech{
-
+.project-content .tech-stack{
     display:flex;
-
-    flex-wrap:wrap;
-
+    justify-content:center;
     gap:10px;
-
-    margin-bottom:25px;
-
+    margin:22px 0;
+    flex-wrap:wrap;
 }
 
-.project-tech span{
-
-    background:#eaf2ff;
-
-    color:#2563eb;
-
-    padding:8px 14px;
-
-    border-radius:20px;
-
+.project-content .tech-stack span{
+    padding:8px 18px;
+    border-radius:30px;
+    background:#f3f7ff;
+    color:#2F80FF;
     font-size:14px;
-
-    font-weight:bold;
-
-}
-
-.project-btn{
-
-    display:inline-block;
-
-    padding:12px 25px;
-
-    background:#2563eb;
-
-    color:white;
-
-    text-decoration:none;
-
-    border-radius:8px;
-
-    transition:.3s;
-
-}
-
-.project-btn:hover{
-
-    background:#1d4ed8;
-
+    font-weight:600;
+    border:1px solid #d8e8ff;
 }
 /* ==========================
    Coding Profiles
@@ -2242,4 +2202,127 @@ transform:scale(1);
 body.dark-mode{
     background:#050816;
     color:white;
+}
+.logo{
+    text-decoration: none;   /* Removes underline */
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.logo-name{
+    color: #ffffff;
+}
+
+.logo:hover{
+    color: #2F80FF;
+    text-decoration: none;   /* Keep underline removed on hover */
+}
+.project-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:14px;
+
+    margin-top:25px;
+
+}
+
+.github-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 22px;
+
+    border:2px solid #2F80FF;
+
+    border-radius:30px;
+
+    color:#2F80FF;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.github-btn:hover{
+
+    background:#2F80FF;
+
+    color:#fff;
+
+}
+
+.demo-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    background:#2F80FF;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.demo-btn:hover{
+
+    background:#1769ff;
+
+    transform:translateY(-2px);
+
+}
+
+.project-content{
+
+    padding:24px;
+
+}
+
+.project-content h3{
+
+    font-size:32px;
+
+    margin:8px 0 10px;
+
+}
+
+.project-content p{
+
+    font-size:17px;
+
+    line-height:1.7;
+
+    color:#555;
+
+    margin-bottom:18px;
+
 }
