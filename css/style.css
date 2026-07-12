@@ -1351,146 +1351,189 @@ nav ul li a:hover, .nav-links a:hover{
 
 /* ==========================
    Responsive Design
-========================== */
+=========================== */
 
-@media (max-width: 992px){
-
-    nav{
-
-        padding:20px;
-
-        flex-direction:column;
-
-        height:auto;
-
+@media (max-width: 1200px){
+    .hero{
+        padding:120px 6%;
+        gap:40px;
     }
 
-    nav ul{
+    .hero-text{
+        width:55%;
+    }
 
-        flex-wrap:wrap;
+    .hero-right{
+        width:45%;
+    }
 
-        justify-content:center;
+    .skills-container,
+    .coding-container{
+        grid-template-columns:repeat(2, 1fr);
+    }
 
-        gap:15px;
+    .certifications-container{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
 
-        margin-top:15px;
-
+@media (max-width: 992px){
+    .navbar{
+        padding:16px 24px;
     }
 
     .hero{
-
-        flex-direction:column-reverse;
-
+        flex-direction:column;
         text-align:center;
-
-        padding:120px 30px 60px;
-
+        gap:50px;
+        padding:120px 24px 70px;
     }
 
-    .hero-content{
-
+    .hero-text,
+    .hero-right{
         width:100%;
-
     }
 
-    .hero-image{
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
 
-        margin-bottom:40px;
-
+    .about-container,
+    .contact-container{
+        grid-template-columns:1fr;
+        flex-direction:column;
+        gap:35px;
     }
 
     .journey{
-
         flex-direction:column;
-
     }
 
     .journey-right{
-
-        grid-template-columns:1fr;
-
+        grid-template-columns:1fr 1fr;
     }
 
-    .skills-container{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
-    .projects-container{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .coding-container{
-
-        grid-template-columns:repeat(2,1fr);
-
-    }
-
+    .projects-grid,
+    .skills-container,
+    .coding-container,
+    .certifications-container,
     .achievement-container{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .contact-container{
-
-        flex-direction:column;
-
-    }
-
-}
-
-@media (max-width: 576px){
-
-    .hero h1{
-
-        font-size:42px;
-
-    }
-
-    .hero h2{
-
-        font-size:28px;
-
-    }
-
-    .hero p{
-
-        font-size:16px;
-
+        grid-template-columns:1fr 1fr;
     }
 
     .hero-image img{
+        width:320px;
+    }
+}
 
-        width:260px;
-
+@media (max-width: 768px){
+    section{
+        padding:70px 7%;
     }
 
-    .skills-container{
-
-        grid-template-columns:1fr;
-
+    h1{
+        font-size:42px;
     }
 
-    .coding-container{
-
-        grid-template-columns:1fr;
-
+    h2{
+        font-size:34px;
     }
 
-    .footer-links{
+    p{
+        font-size:16px;
+    }
 
+    .navbar{
+        padding:15px 7%;
+        flex-wrap:wrap;
+    }
+
+    .menu-toggle{
         display:flex;
-
-        flex-direction:column;
-
-        gap:10px;
-
     }
 
+    .nav-links{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:14px;
+        padding-top:12px;
+        margin-top:8px;
+        border-top:1px solid rgba(255,255,255,.12);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-icons{
+        margin-left:auto;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding-top:110px;
+    }
+
+    .hero-image img{
+        width:260px;
+    }
+
+    .project-card{
+        margin-bottom:25px;
+    }
+
+    .project-buttons{
+        flex-direction:column;
+    }
+
+    .github-btn,
+    .demo-btn{
+        width:100%;
+        justify-content:center;
+    }
+
+    .journey-right,
+    .projects-grid,
+    .skills-container,
+    .coding-container,
+    .certifications-container,
+    .achievement-container{
+        grid-template-columns:1fr;
+    }
+}
+
+@media (max-width: 480px){
+    .logo{
+        font-size:22px;
+    }
+
+    h1{
+        font-size:34px;
+    }
+
+    .hero-image img{
+        width:220px;
+    }
+
+    .tech-stack{
+        justify-content:center;
+    }
+
+    .resume-btn,
+    .work-btn{
+        width:100%;
+        justify-content:center;
+        margin-right:0;
+    }
+
+    .footer-links a{
+        display:inline-block;
+        margin:6px 8px;
+    }
 }
 /* ===========================
    About Section
@@ -2307,6 +2350,7 @@ body.dark-mode{
 
 }
 
+
 .project-content h3{
 
     font-size:32px;
@@ -2326,3 +2370,4 @@ body.dark-mode{
     margin-bottom:18px;
 
 }
+
